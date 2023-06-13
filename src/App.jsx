@@ -8,9 +8,12 @@ function App() {
   return (
     <div className="app">
       <header>
-        search box <a href="https://github.com/coding-tea" target='_blank' >@codingTea <i class="bi bi-github"></i></a>
+        search box 
+        <a href="https://github.com/coding-tea" target='_blank' rel="noreferrer">
+          @codingTea <i className="bi bi-github"></i>
+        </a>
       </header>
-      <Search />
+      <Search data={data} />
     </div>
   );
 }

@@ -4,8 +4,15 @@ const Search = (props) => {
 
     const [keyword, setKeyword] = useState();
     const [values, setValues] = useState([]);
+    const data = props.data;
     useEffect(()=>{
-        setValues(props.data.includes(keyword));
+        data.map((item, index) => {
+            if(index >= 5) return;
+            if(item.includes(keyword) && !values.includes(item))
+                setValues([...values, item]);
+            if(keyword == '')
+                setValues('');
+        });
     }, [keyword]);
 
     return (
