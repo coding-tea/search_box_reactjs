@@ -18,7 +18,7 @@ const Search = (props) => {
     return (
         <>
             <div className='search-box'>
-                <label htmlFor="search"></label>
+                <label htmlFor="search">search : </label>
                 <input type="text" id='search' value={keyword} onChange={e => setKeyword(e.target.value)} />
             </div>
             <div className="search_values">
