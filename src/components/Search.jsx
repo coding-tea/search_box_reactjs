@@ -10,7 +10,7 @@ const Search = (props) => {
             if(index >= 5) return;
             if(item.includes(keyword) && !values.includes(item))
                 setValues([...values, item]);
-            if(keyword == '')
+            if(keyword === '')
                 setValues('');
         });
     }, [keyword]);
