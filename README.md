@@ -2,7 +2,7 @@
 ## react js filter search application that efficiently displays relevant elements from a JSON dataset based on user input
 
 # /- About project
-<img src='/searchbox.PNG' />
+<img src='/searchbox.PNG'  />
 
 The idea is to develop a powerful filter search application that efficiently displays relevant elements from a JSON dataset based on user input.
 
